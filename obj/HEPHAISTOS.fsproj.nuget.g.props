@@ -13,11 +13,13 @@
     <SourceRoot Include="C:\Users\micha\.nuget\packages\" />
     <SourceRoot Include="C:\Program Files (x86)\Microsoft Visual Studio\Shared\NuGetPackages\" />
   </ItemGroup>
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.0\build\net6.0\Microsoft.EntityFrameworkCore.Design.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore.design\6.0.0\build\net6.0\Microsoft.EntityFrameworkCore.Design.props')" />
+  </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\micha\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
+    <PkgMicrosoft_EntityFrameworkCore_SqlServer Condition=" '$(PkgMicrosoft_EntityFrameworkCore_SqlServer)' == '' ">C:\Users\micha\.nuget\packages\microsoft.entityframeworkcore.sqlserver\6.0.0</PkgMicrosoft_EntityFrameworkCore_SqlServer>
+    <PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore Condition=" '$(PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore)' == '' ">C:\Users\micha\.nuget\packages\microsoft.aspnetcore.diagnostics.entityframeworkcore\6.0.0</PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\micha\.nuget\packages\fsharp.core\7.0.0</PkgFSharp_Core>
-    <PkgWebSharper Condition=" '$(PkgWebSharper)' == '' ">C:\Users\micha\.nuget\packages\websharper\4.7.2.445</PkgWebSharper>
-    <PkgWebSharper_UI_Next Condition=" '$(PkgWebSharper_UI_Next)' == '' ">C:\Users\micha\.nuget\packages\websharper.ui.next\4.7.0.244</PkgWebSharper_UI_Next>
-    <PkgMicrosoft_CodeAnalysis_Analyzers Condition=" '$(PkgMicrosoft_CodeAnalysis_Analyzers)' == '' ">C:\Users\micha\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2</PkgMicrosoft_CodeAnalysis_Analyzers>
-    <PkgMicrosoft_AspNetCore_Mvc_Razor_RuntimeCompilation Condition=" '$(PkgMicrosoft_AspNetCore_Mvc_Razor_RuntimeCompilation)' == '' ">C:\Users\micha\.nuget\packages\microsoft.aspnetcore.mvc.razor.runtimecompilation\7.0.0</PkgMicrosoft_AspNetCore_Mvc_Razor_RuntimeCompilation>
   </PropertyGroup>
 </Project>

@@ -1,0 +1,8 @@
+
+after adding dependencies run in termal
+donet restore
+
+
+to run the program in terminal
+dotnet run
+
