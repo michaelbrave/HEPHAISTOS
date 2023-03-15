@@ -13,5 +13,10 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="7.0.0" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="WebSharper" Version="4.7.2.445" />
+    <PackageReference Include="WebSharper.UI.Next" Version="4.7.0.244" />
+  </ItemGroup>
 
 </Project>
