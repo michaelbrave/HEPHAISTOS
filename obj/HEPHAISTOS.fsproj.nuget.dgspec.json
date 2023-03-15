@@ -52,6 +52,11 @@
               "version": "[6.0.0, )",
               "generatePathProperty": true
             },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "generatePathProperty": true
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[6.0.0, )",

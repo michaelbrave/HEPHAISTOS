@@ -19,6 +19,7 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">C:\Users\micha\.nuget\packages\microsoft.entityframeworkcore.tools\6.0.0</PkgMicrosoft_EntityFrameworkCore_Tools>
     <PkgMicrosoft_EntityFrameworkCore_SqlServer Condition=" '$(PkgMicrosoft_EntityFrameworkCore_SqlServer)' == '' ">C:\Users\micha\.nuget\packages\microsoft.entityframeworkcore.sqlserver\6.0.0</PkgMicrosoft_EntityFrameworkCore_SqlServer>
+    <PkgMicrosoft_AspNetCore_Http_Extensions Condition=" '$(PkgMicrosoft_AspNetCore_Http_Extensions)' == '' ">C:\Users\micha\.nuget\packages\microsoft.aspnetcore.http.extensions\2.2.0</PkgMicrosoft_AspNetCore_Http_Extensions>
     <PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore Condition=" '$(PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore)' == '' ">C:\Users\micha\.nuget\packages\microsoft.aspnetcore.diagnostics.entityframeworkcore\6.0.0</PkgMicrosoft_AspNetCore_Diagnostics_EntityFrameworkCore>
     <PkgFSharp_Core Condition=" '$(PkgFSharp_Core)' == '' ">C:\Users\micha\.nuget\packages\fsharp.core\7.0.0</PkgFSharp_Core>
   </PropertyGroup>

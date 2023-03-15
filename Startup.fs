@@ -13,6 +13,8 @@ type Startup(env: IWebHostEnvironment) =
     member __.ConfigureServices(services: IServiceCollection) =
         // Add services to the container.
         services.AddControllersWithViews() |> ignore
+        services.AddDistributedMemoryCache() |> ignore
+        services.AddSession() |> ignore
 
     member __.Configure(app: IApplicationBuilder, env: IWebHostEnvironment) =
         if env.IsDevelopment() then
@@ -26,6 +28,8 @@ type Startup(env: IWebHostEnvironment) =
         app.UseStaticFiles() |> ignore
 
         app.UseRouting() |> ignore
+
+        app.UseSession() |> ignore
 
         app.UseAuthorization() |> ignore
 

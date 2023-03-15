@@ -1,0 +1,29 @@
+@page
+@{
+    ViewData["Title"] = "Click Counter";
+}
+
+<h2>Click Counter</h2>
+<button id="clickButton">Click me!</button>
+<p>Click count: <span id="clickCount">0</span></p>
+
+@section Scripts {
+    <script>
+        const clickButton = document.getElementById("clickButton");
+        const clickCount = document.getElementById("clickCount");
+
+        clickButton.addEventListener("click", async () => {
+            const response = await fetch("/ClickCounter?handler=Increment", {
+                method: "POST",
+                headers: {
+                    "RequestVerificationToken": document.getElementsByName("__RequestVerificationToken")[0].value
+                }
+            });
+
+            if (response.ok) {
+                const updatedCount = await response.json();
+                clickCount.textContent = updatedCount;
+            }
+        });
+    </script>
+}

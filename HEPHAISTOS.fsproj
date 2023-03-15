@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Compile Include="Startup.fs" />
+    <Compile Include="Pages\ClickCounter.cshtml.fs" />
     <Compile Include="Program.fs" />
     <None Include="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
     <None Include="appsettings.Development.json" CopyToOutputDirectory="PreserveNewest" />
@@ -16,5 +17,6 @@
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Extensions" Version="2.2.0" />
   </ItemGroup>
 </Project>
